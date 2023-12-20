@@ -1,0 +1,33 @@
+version: 2
+
+models:
+  - name: sample1
+    description: "My first model that shows the loaded vehicle"
+    columns:
+      - name: track_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+
+models:
+  - name: sample2
+    description: "This my second model showing the different trajectory within timestamps, that will run after the inital data of the vehicle loads"
+    columns:
+      - name: lat
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null          
+
+
+models:
+  - name: orders
+    description: "This will be the third model depicting my final tasks"
+    columns:
+      - name: track_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null          
