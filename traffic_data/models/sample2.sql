@@ -1,3 +1,1 @@
-select *
-from {{ ref('sample1') }}
-where id = 1
+SELECT * FROM combined

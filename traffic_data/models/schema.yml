@@ -1,8 +1,8 @@
 version: 2
 
 models:
-  - name: sample1
-    description: "My first model that shows the loaded vehicle"
+  - name: Vehicle Info
+    description: "Information on the type, speed and distance traveled of the Vehicle"
     columns:
       - name: track_id
         description: "The primary key for this table"
@@ -12,10 +12,10 @@ models:
 
 
 models:
-  - name: sample2
-    description: "This my second model showing the different trajectory within timestamps, that will run after the inital data of the vehicle loads"
+  - name: Trajectory Info
+    description: "Data about the trajectory(latitude, longitude, and so on) of a vehicle within timestamps"
     columns:
-      - name: lat
+      - name: track_id, time
         description: "The primary key for this table"
         tests:
           - unique
