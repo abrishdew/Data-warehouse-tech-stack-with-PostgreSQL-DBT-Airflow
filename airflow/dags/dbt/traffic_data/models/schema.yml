@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: sample1
+    description: "Information on the type, speed and distance traveled of the Vehicle"
+    columns:
+      - name: track_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+
+models:
+  - name: sample2
+    description: "Data about the trajectory(latitude, longitude, and so on) of a vehicle within timestamps"
+    columns:
+      - name: track_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null                   
